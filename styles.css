@@ -1,1 +1,12 @@
+html  {
+    background-color: #FEF9EF;
+    font-family: 'Dosis', sans-serif;
+}
 
+header  {
+    background-color: #938581;
+    height: 150px;
+    border: 0 solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px  #7E6551;
+}
