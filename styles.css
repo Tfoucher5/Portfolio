@@ -3,10 +3,73 @@ html  {
     font-family: 'Dosis', sans-serif;
 }
 
+/*HEADER*/
+
 header  {
+    display: grid;
+    grid-template-columns: calc(100%/3) ;
     background-color: #938581;
     height: 150px;
     border: 0 solid;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px  #7E6551;
+    box-shadow: 5px 5px 5px #6E615E;
 }
+
+#profile-picture    {
+    grid-column: 1 / span 1;
+}
+
+#title   {
+    grid-column: 2 / span 1;
+    margin: 0   auto;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+#status  {
+    grid-column: 2 / span 1;
+    margin: 0   auto;
+    font-size: 25px;
+}
+
+#infos-complement   {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0   auto;
+    list-style: none;   
+}
+
+/*CONTENU*/
+
+#contenu    {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 25px;
+}
+
+/*COMPETENCES*/
+
+#skills {
+    background-color: #A0826A;
+    border: 0   solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #705A48;
+}
+
+#skills ul  {
+    margin: 0   auto;
+    height: 450px;
+}
+
+#titre-competences   {
+    list-style: none;
+    list-style-image: none;
+    font-size: 35px;
+}
+
+.liste-competences  {
+    list-style: none;
+    list-style-image: url(images/angle-right.png);
+    font-size: 25px;
+}
+
