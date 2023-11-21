@@ -1,3 +1,25 @@
+
+  /* Styles spécifiques pour les écrans larges */
+  @media screen and (min-width: 1200px) {
+    
+  }
+  
+  /* Styles spécifiques pour les tablettes et les petits écrans */
+  @media screen and (max-width: 1199px) {
+    
+  }
+  
+  /* Styles spécifiques pour les téléphones mobiles */
+  @media screen and (max-width: 767px) {
+    
+  }
+  
+  /* Ajoutez d'autres media queries au besoin pour d'autres tailles d'écran */
+  
+  /* Styles restants */
+  /* Ajoutez ici les styles qui restent inchangés quelle que soit la taille de l'écran */
+
+
 html  {
     background-color: #FEF9EF;
     font-family: 'Dosis', sans-serif;
@@ -39,12 +61,16 @@ header  {
 #contenu    {
     display: grid;
     grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
     column-gap: 25px;
+    row-gap: 25px;
 }
 
 /*COMPETENCES*/
 
 #skills {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
     background-color: #A0826A;
     border: 0   solid;
     border-radius: 15px;
@@ -59,6 +85,7 @@ header  {
 #titre-competences   {
     list-style: none;
     list-style-image: none;
+    text-align: center;
     font-size: 35px;
 }
 
@@ -98,9 +125,31 @@ header  {
 #stage1 a:hover   {
     color: black;
     border: 0   solid;
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px ;
 }
 
 #stage1-desc    {
     font-size: 25px;
     list-style: none;
+    margin-top: -30px;
+}
+
+/*DIPLOMES*/
+
+#diplomes   {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    background-color: #5D8382;
+    border: 0 solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #445F5F;
+    margin-right: 35px;
+}
+
+#diplomes h1    {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
 }
