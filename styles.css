@@ -7,12 +7,14 @@ html  {
 
 header  {
     display: grid;
-    grid-template-columns: calc(100%/3) ;
+    grid-template-columns: auto auto auto ;
     background-color: #938581;
-    height: 150px;
     border: 0 solid;
+    height: 150px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #6E615E;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #profile-picture    {
@@ -32,13 +34,6 @@ header  {
     font-size: 25px;
 }
 
-#infos-complement   {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    margin: 0   auto;
-    list-style: none;   
-}
-
 /*CONTENU*/
 
 #contenu    {
@@ -54,11 +49,11 @@ header  {
     border: 0   solid;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #705A48;
+    margin-left: 15px;
 }
 
 #skills ul  {
     margin: 0   auto;
-    height: 450px;
 }
 
 #titre-competences   {
@@ -73,3 +68,39 @@ header  {
     font-size: 25px;
 }
 
+/*EXPERIENCES*/
+
+#experiences    {
+    background-color: #5D8382;
+    border: 0 solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #445F5F;
+    margin-right: 35px;
+}
+
+#experiences h1 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#stage1 {
+    font-size: 25px;
+    list-style: none;
+    list-style-image: url(images/fleche\ liste.png);
+}
+
+#stage1 a   {
+    text-decoration: underline;
+    color: black;
+}
+
+#stage1 a:hover   {
+    color: black;
+    border: 0   solid;
+}
+
+#stage1-desc    {
+    font-size: 25px;
+    list-style: none;
+}
