@@ -237,3 +237,41 @@ header  {
     box-shadow: 5px 5px 5px #6E615E;
     margin-right: 35px;
 }
+
+#travaux-titre  {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#mestravaux {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#travaux-soustitre  {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+#dexter {
+    grid-column: 1 / span 1;
+}
+
+.desc-travaux   {
+    font-size: 25px;
+}
+
+.voir-plus-travaux  {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #6E615E;
+    border-radius: 15px;
+    padding: 2px 7px;
+}
+
+.voir-plus-travaux:hover    {
+    border: 10px 15px;
+    box-shadow: 5px 5px 5px #6E615E;
+}
